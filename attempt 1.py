@@ -16,3 +16,44 @@ plus(2,3,4)
 
 #create a function to find the area of a triangle
 print(1/2*21*69)
+
+box = 5
+ # Greeting
+def hello(name):
+    print(name)
+     
+hello("leo")    
+
+
+
+
+import math
+
+dir (math)
+
+math.pi
+
+math.asin
+
+math.isfinite
+
+math.pow(69,21)
+
+
+def cubicroot (a):
+    cr = 18
+    print("the cubicroot of the",a,"is,cr)
+cubicroot(8)    
+#math.pow
+
+
+
+
+print("Please enter a variable")
+x = 20
+def cube(x):
+cube = math.pow(x,(1/3))
+print ("the cube root of",x"is",cube)
+
+x=20
+    
