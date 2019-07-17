@@ -56,4 +56,68 @@ cube = math.pow(x,(1/3))
 print ("the cube root of",x"is",cube)
 
 x=20
-    
+
+
+
+#diffrent kind on chocolates
+def chocolate (m,d,w)   :
+    chocolate (5,3,8)
+m ="cadburymilk"
+m = "cadburywhite"
+m = "cadburydark"
+
+print ("There are 5" ,m,"3",d,"8",W,"to share")
+
+# dict data structure 
+chocolate1 = {"milk":5}
+chocolate2 = {"dark":3}
+chocolate3 = {"white":8}
+
+
+
+chocolate = {"milk",5,"dark",3,"white",8}
+
+print (chocolate)
+print ("the number of chocolates in the box")
+
+chocolate = {"milk":5,"dark":3,"white":8}
+print("the number of white cholate in the chocolte box is",
+      chocolate["white"])
+
+
+
+ages = {"steve":32,"lia":28,"vin":45,"katie":38}
+gender = {"steve":"m","lia":"f","vin":"m","katie":"f"}
+
+
+
+#panda 
+import pandas
+
+dir (pandas)
+
+#data frames
+
+
+chocolatedf = pandas.DataFrame(chocolatedata, index=["quantity"])#convert to colum
+print(chocolatedf)
+
+
+#list
+chocolatedata = [chocolate] #covert dict to list
+print(chocolatedata)
+
+#dataframes from list
+studentallinfo = [["steve",32,"male"],["lia",28,"female"],["vin",45,"male"] ,["katie",38,"female"]]
+df = pandas.DataFrame(studentallinfo)
+print(df)
+
+df1 = pandas.DataFrame([studentallinfo])
+print(df1)
+
+df12 = pandas.DataFrame([studentallinfo], index=["age"])
+print(df12)
+
+df2 = pandas.DataFrame(studentallinfo, columns=["name","age","gender"])
+print(df2)
+
