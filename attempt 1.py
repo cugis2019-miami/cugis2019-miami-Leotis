@@ -3,7 +3,6 @@
 Spyder Editor
 
 This is a temporary script file.
-"""
 
 print("hellow world")
 print("2169" )
@@ -121,3 +120,75 @@ print(df12)
 df2 = pandas.DataFrame(studentallinfo, columns=["name","age","gender"])
 print(df2)
 
+
+
+
+
+
+dir(ploty)  from plotly.offlile impoert plot
+importplotly.graph_objs as go
+
+agename = go.bar(x=studentlistdf)["name"], y=studentlistdf["age"])
+
+plot([agename])
+
+studentlist = [["steve",32,"male"],["lia",28,"female"],["vin",45,"male"] ,["katie",38,"female"]]
+
+print(studentlist)
+
+studentlistdf = pd.DataFrame(studentlist, columns =["name","age","gender"],
+                                 index = [1,2,3,4])
+
+print(studentlistdf)
+
+
+#aproch our data  
+dir(plotly)
+from plotly.offline import plot
+import plotly.graph_objs as go
+
+agename = go.Bar(x=studentlistdf["name"], y=studentlistdf["age"])
+
+plot([agename])
+
+
+"""
+
+
+import pandas as pd
+import plotly
+from plotly.offline import plot
+import plotly.graph_objs as go
+
+
+
+
+
+
+
+
+
+df = pd.read_excel("GISdata.xlsx",sheet_name = "womenOccupation")
+
+womenoccupation = go.Bar(x = df["occupation"], y=df["women"], 
+                         marker ={"color":df["women"],"colorscale" :"Picnic"}
+                         )
+                         
+
+plot([womenoccupation])
+
+#fig = go.Figure(data=[womenoccupation])
+
+
+titles = go.layout(title = "percentage of Women Employed by Occupation",
+                   
+                  xaxis=go.layout.XAxis(title=go.layout.xaxis.Title(text="Occupation",
+                        )
+                    ),
+
+                  yaxis=go.layout.YAxis(title=go.layout.yaxis.Title(text="Percentage",)
+                          )
+                    )
+fig = go.Figure(data=[womenoccupation], layout = titles)
+
+plot(fig)
